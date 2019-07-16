@@ -10,15 +10,15 @@ const Numbers = () => {
   // STEP 2 - add the imported data to state
     console.log(numbers);
     const [stateNumbers, setNumber] = useState(numbers);
-    const ids = stateNumbers.map(item => console.log(item)); 
+    const nums = stateNumbers.map(digits => digits.char); 
     
   return (
-    <div>
+    <div className="numberButtons">
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
-        {stateNumbers.map(item => (
-            <NumberButton key={item} id={item} numbersMapped={item} />
+        {stateNumbers.map(number => (
+            <NumberButton key={number} numbersMapped={number} />
       ))}
     </div>
   );
