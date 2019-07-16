@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculatorScreen {
+    background: #2d2829;
+    color: white;
+    width: 18rem;
+    height: 4rem;
+    padding: .8rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: end;
+    border-radius: 30px;
+    margin: 1rem 0;
+}
+
+.numberButton {
+    background: #113c78;
+    color: white;
+    text-shadow: 1.5px 1.5px #000;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: transparent;
+    box-shadow: 2px 2px #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: .5rem;
+}
+
+.numberButton:nth-child(10) {
+    width: 8rem;
+    border-radius: 30px;
+}
+.numberButtons {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 14rem;
+}
+.specialButton {
+    background: #2061b0;
+    height: 4rem;
+    width: 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px #000;
+    color: white;
+    border-radius: 50%;
+    border: transparent;
+    box-shadow: 2px 2px #000;
+}
+.specialButtons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 14rem;
+}
+
+.operatorButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: .3rem;
+}
+
+.operatorButton {
+    background: #3db5e5;
+    height: 4rem;
+    width: 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px #000;
+    color: white;
+    border-radius: 50%;
+    border: transparent;
+    box-shadow: 2px 2px #000;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+}
+
+.calculatorContainer {
+    background: #bb1233;
+    width: 24rem;
+    border: 1px solid #808080;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 3rem;
+    margin: 0 auto;
+}
+
+.calculatorButtons {
+    display: flex;
+    width: 20rem;
+}
+
+.numberButton:hover,
+.specialButton:hover,
+.operatorButton:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
